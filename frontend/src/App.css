@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for buttons */
+button {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styles for paragraphs */
+p {
+  margin: 25px 650px 20px 20px;
+  padding: 20px;
+  background-color: aqua;
+}
+
+h2 {
+  margin-left: 15px;
+}
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.counter-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.counter {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* FetchData Component */
+.fetch-container {
+  margin-top: 30px;
+}
+
+.fetch-container h2 {
+  text-align: center;
+}
+
+.fetch-container button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.fetch-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fetch-container li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.fetch-container h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
