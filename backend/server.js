@@ -1,46 +1,15 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+
 const app = express();
-const port = 3001;
 
-app.use(bodyParser.json());
-app.use(cors());
+const PORT = 3000;
 
-let data = [
-  {
-    id: 1,
-    name: "Item 1",
-    description: "Description of Item 1",
-  },
-  {
-    id: 2,
-    name: "Item 2",
-    description: "Description of Item 2",
-  },
-  {
-    id: 3,
-    name: "Item 3",
-    description: "Description of Item 3",
-  },
-  {
-    id: 4,
-    name: "Item 4",
-    description: "Description of Item 4",
-  },
-];
-
-app.get("/data", (req, res) => {
-  res.json(data);
+app.get("/", (req, res) => {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.write("<h1>Welcome</h1>");
+  res.end();
 });
 
-app.post("/data", (req, res) => {
-  const newItem = req.body;
-
-  data.push(newItem);
-  res.status(201).json(newItem);
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`server listening on http://localhost:${PORT}`);
 });
